@@ -1,0 +1,1 @@
+import{_ as s,c as t,a as o,o as r}from"./index-9vcOj0tA.js";const a={},c={class:"store"};function n(_,e){return r(),t("div",c,e[0]||(e[0]=[o("h1",null,"This is the store page",-1)]))}const l=s(a,[["render",n]]);export{l as default};

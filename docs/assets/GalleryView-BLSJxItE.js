@@ -1,0 +1,1 @@
+import{_ as s,c as a,a as r,o as t}from"./index-9vcOj0tA.js";const o={},l={class:"gallery"};function c(n,e){return t(),a("div",l,e[0]||(e[0]=[r("h1",null,"This is the gallery page",-1)]))}const i=s(o,[["render",c]]);export{i as default};
