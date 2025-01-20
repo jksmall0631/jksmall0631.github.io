@@ -11,7 +11,6 @@ import Title from './components/Title.vue'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/gallery">Gallery</RouterLink>
-        <RouterLink to="/store">Store</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
       </nav>
     </div>
@@ -27,14 +26,16 @@ header {
 }
 
 nav {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: var(--color-link-text-active);
 }
 
 nav a.router-link-exact-active:hover {
@@ -43,11 +44,9 @@ nav a.router-link-exact-active:hover {
 
 nav a {
   display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
+  flex-grow: 1;
+  padding: 1rem 1rem;
+  border-top: 2px solid var(--color-border);
+  border-bottom: 2px solid var(--color-border);
 }
 </style>
