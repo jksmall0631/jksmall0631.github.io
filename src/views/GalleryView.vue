@@ -6,7 +6,6 @@
 
 <style>
 .gallery {
-  min-height: 100vh;
   align-items: center;
 }
 </style>

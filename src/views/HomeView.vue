@@ -6,7 +6,6 @@
 
 <style>
 .home {
-  min-height: 100vh;
   align-items: center;
   width: 100%;
 }

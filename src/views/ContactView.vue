@@ -114,7 +114,6 @@ export default {
 
 <style>
 .contact {
-  min-height: 100vh;
   align-items: center;
 }
 
@@ -136,17 +135,15 @@ export default {
   resize: none;
 }
 
-.form input:last-child {
-  height: 30px;
-}
-
 .form input[type=submit] {
-  padding:5px 15px; 
   background:#ccc; 
   border:0 none;
-  cursor:pointer;
-  -webkit-border-radius: 5px;
   border-radius: 5px; 
+  color: white;
+  cursor:pointer;
+  font-weight: 600;
+  height: 30px;
+  padding:5px 15px; 
 }
 
 .header {
