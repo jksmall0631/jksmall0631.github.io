@@ -2,7 +2,7 @@
   <div class="gallery">
     <div class="photo-grid">
       <div class="photo" v-for="(photo, index) in photos" :key="index" @click="goToPhotoDetails(index)">
-        <img :src="`../photos/${photo}`" :alt="'Photo' + (index + 1)" />
+        <img :src="`./photos/${photo}`" :alt="'Photo' + (index + 1)" />
       </div>
     </div>
   </div>
@@ -12,9 +12,9 @@
 export default {
   computed: {
     photos() {
-      const photos = import.meta.glob('../photos/*');
+      const photos = import.meta.glob('./photos/*');
       const photoNames = Object.keys(photos).map((photo) => {
-        return photo.replace('../photos/', '');
+        return photo.replace('./photos/', '');
       });
       return photoNames;
     }
