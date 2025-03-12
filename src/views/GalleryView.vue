@@ -12,9 +12,9 @@
 export default {
   computed: {
     photos() {
-      const photos = import.meta.glob('../assets/photos/*');
+      const photos = import.meta.glob('./assets/photos/*');
       const photoNames = Object.keys(photos).map((photo) => {
-        return photo.replace('../assets/photos/', '');
+        return photo.replace('./assets/photos/', '');
       });
       return photoNames;
     }
