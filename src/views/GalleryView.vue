@@ -10,17 +10,17 @@
 
 <script>
 const photoPaths = [
-  '/src/assets/photos/bowl.jpg',
-  '/src/assets/photos/cabinet-kitchen.jpg',
-  '/src/assets/photos/cabinet-shop.jpg',
-  '/src/assets/photos/coffee.jpg',
-  '/src/assets/photos/desk.jpg',
-  '/src/assets/photos/frame-black.jpg',
-  '/src/assets/photos/frame-cars.jpg',
-  '/src/assets/photos/frame-two.jpg',
-  '/src/assets/photos/mirror.jpg',
-  '/src/assets/photos/stool-unfinished.jpg',
-  '/src/assets/photos/tool-chest-shop.jpg',
+  '../assets/photos/bowl.jpg',
+  '../assets/photos/cabinet-kitchen.jpg',
+  '../assets/photos/cabinet-shop.jpg',
+  '../assets/photos/coffee.jpg',
+  '../assets/photos/desk.jpg',
+  '../assets/photos/frame-black.jpg',
+  '../assets/photos/frame-cars.jpg',
+  '../assets/photos/frame-two.jpg',
+  '../assets/photos/mirror.jpg',
+  '../assets/photos/stool-unfinished.jpg',
+  '../assets/photos/tool-chest-shop.jpg',
 ];
 
 export default {
