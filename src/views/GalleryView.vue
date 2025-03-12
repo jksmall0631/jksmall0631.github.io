@@ -1,6 +1,7 @@
 <template>
   <div class="gallery">
     <div class="photo-grid">
+      <img src="../assets/photos/desk-jordan.jpg" alt="Photo" />
       <div class="photo" v-for="(photo, index) in photos" :key="index" @click="goToPhotoDetails(index)">
         <img :src="`@/assets/photos/${photo}`" :alt="'Photo' + (index + 1)" />
       </div>
