@@ -25,7 +25,7 @@ export default {
     let path = localStorage.getItem('path');
     if(path) {
       localStorage.removeItem('path');
-      this.router.navigate([path]);
+      this.$router.navigate([path]);
     }
   },
 }
