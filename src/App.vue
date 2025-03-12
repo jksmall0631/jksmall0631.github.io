@@ -19,6 +19,18 @@ import Title from './components/Title.vue'
   <RouterView />
 </template>
 
+<script>
+export default {
+  mounted() {
+    let path = localStorage.getItem('path');
+    if(path) {
+      localStorage.removeItem('path');
+      this.router.navigate([path]);
+    }
+  },
+}
+</script>
+
 <style scoped>
 header {
   line-height: 1.5;
