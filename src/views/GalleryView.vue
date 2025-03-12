@@ -1,24 +1,36 @@
 <template>
   <div class="gallery">
     <div class="photo-grid">
-      <img src="../assets/photos/desk-jordan.jpg" alt="Photo" />
-      <div class="photo" v-for="(photo, index) in photos" :key="index" @click="goToPhotoDetails(index)">
-        <img :src="`../assets/photos/${photo}`" :alt="'Photo' + (index + 1)" />
+      <div class="photo" v-for="(photo, index) in photoPaths" :key="index" @click="goToPhotoDetails(index)">
+        <img :src="photo" :alt="'Photo' + (index + 1)" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+const photoPaths = [
+  '/src/assets/photos/bowl.jpg',
+  '/src/assets/photos/cabinet-kitchen.jpg',
+  '/src/assets/photos/cabinet-shop.jpg',
+  '/src/assets/photos/coffee.jpg',
+  '/src/assets/photos/desk.jpg',
+  '/src/assets/photos/frame-black.jpg',
+  '/src/assets/photos/frame-cars.jpg',
+  '/src/assets/photos/frame-two.jpg',
+  '/src/assets/photos/mirror.jpg',
+  '/src/assets/photos/stool-unfinished.jpg',
+  '/src/assets/photos/tool-chest-shop.jpg',
+];
+
 export default {
-  computed: {
-    photos() {
-      const photos = import.meta.glob('../assets/photos/*');
-      const photoNames = Object.keys(photos).map((photo) => {
-        return photo.replace('../assets/photos/', '');
-      });
-      return photoNames;
-    }
+  data() {
+    return {
+      photoPaths
+    };
+  },
+  mounted() {
+    console.log(this.photoPaths);
   },
   methods: {
     goToPhotoDetails(index) {
