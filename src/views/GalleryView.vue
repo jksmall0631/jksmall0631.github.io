@@ -12,7 +12,7 @@
 export default {
   computed: {
     photos() {
-      const photos = import.meta.glob('../photos/*');
+      const photos = import.meta.glob('/public/photos/*');
       return Object.keys(photos);
     }
   },
