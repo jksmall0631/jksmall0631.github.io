@@ -27,12 +27,13 @@ const router = createRouter({
       component: () => import('../views/ContactView.vue'),
     },
     {
-      path: '/details/:id',
+      path: '/gallery/:id',
       name: 'details',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/ContactView.vue'),
+      component: () => import('../views/DetailView.vue'),
+      props: true,
     },
   ],
 })
