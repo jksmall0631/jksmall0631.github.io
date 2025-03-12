@@ -2,7 +2,7 @@
   <div class="gallery">
     <div class="photo-grid">
       <div class="photo" v-for="(photo, index) in photos" :key="index" @click="goToPhotoDetails(index)">
-        <img :src="`../photos/${photo}`" :alt="'Photo' + (index + 1)" />
+        <img :src="`assets/${photo}`" :alt="'Photo' + (index + 1)" />
       </div>
     </div>
   </div>
