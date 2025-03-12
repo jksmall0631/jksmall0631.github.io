@@ -1,11 +1,62 @@
 <template>
   <div class="gallery">
-    <h1>This is the gallery page</h1>
+    <div class="photo-grid">
+      <div class="photo" v-for="(photo, index) in photos" :key="index" @click="goToPhotoDetails(index)">
+        <img :src="photo" :alt="'Photo' + (index + 1)" />
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    photos() {
+      const photos = import.meta.glob('/public/photos/*');
+      return Object.keys(photos);
+    }
+  },
+  methods: {
+    goToPhotoDetails(index) {
+      this.$router.push({ name: 'details', params: { id: index } });
+    }
+  }
+};
+</script>
 
 <style>
 .gallery {
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.photo {
+  width: 300px;
+  height: 300px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s;
+}
+
+.photo img:hover {
+  filter: brightness(0.8);
 }
 </style>
