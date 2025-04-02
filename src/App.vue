@@ -5,9 +5,8 @@ import Title from './components/Title.vue'
 
 <template>
   <header>
-    <div class="wrapper">
+    <div class="headerWrapper">
       <Title msg="small wood" />
-
       <nav>
         <RouterLink to="/">home</RouterLink>
         <RouterLink to="/gallery">gallery</RouterLink>
@@ -16,7 +15,9 @@ import Title from './components/Title.vue'
     </div>
   </header>
 
-  <RouterView class="main" />
+  <div class="contentWrapper">
+    <RouterView />
+  </div> 
 </template>
 
 <script>
@@ -33,16 +34,15 @@ export default {
 
 <style scoped>
 header {
-  line-height: 1.5;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: white; /* Ensure the header has a background */
-  z-index: 1000;
+  background-color: white;
 }
 
-.wrapper {
+.headerWrapper {
+  display: block;
   padding: 2rem;
   padding-bottom: 0;
 }
@@ -72,7 +72,8 @@ nav a {
   border-bottom: 2px solid var(--color-border);
 }
 
-.main {
-  padding-top: calc(7rem + 40px); /* Adjust padding to match header height and wrapper padding */
+.contentWrapper {
+  padding-top: calc(7rem + 40px);
+  width: 100%;
 }
 </style>
