@@ -4,8 +4,7 @@
             <img
                 v-for="photo in details[id].photos"
                 class="photo"
-                src="../assets/photos/coffee-jordan.jpg"
-                :alt="'Photo 1'"
+                :src="photo.src"
             />
         </div>
         <div class="info-section">
@@ -15,7 +14,7 @@
     </div>
 </template>
 <script>
-import { details } from '../constants/DetailConstants.js';
+import { details } from './constants/PhotoMetadata.js';
 
 export default {
     data() {
@@ -35,7 +34,7 @@ export default {
 <style scoped>
 .detail {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* 2/3 for photo-section, 1/3 for info-section */
+    grid-template-columns: 2fr 1fr;
     width: 100%;
     height: 100vh;
 }

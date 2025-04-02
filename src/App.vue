@@ -6,12 +6,12 @@ import Title from './components/Title.vue'
 <template>
   <header>
     <div class="wrapper">
-      <Title msg="Small Wood" />
+      <Title msg="small wood" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/gallery">Gallery</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
+        <RouterLink to="/">home</RouterLink>
+        <RouterLink to="/gallery">gallery</RouterLink>
+        <RouterLink to="/contact">contact</RouterLink>
       </nav>
     </div>
   </header>
