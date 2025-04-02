@@ -1,5 +1,5 @@
 <template>
-  <DetailView :id="2" />
+  <DetailView :id="0" />
 </template>
 
 <script>

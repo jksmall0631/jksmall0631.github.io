@@ -16,7 +16,7 @@ import Title from './components/Title.vue'
     </div>
   </header>
 
-  <RouterView />
+  <RouterView class="main" />
 </template>
 
 <script>
@@ -34,7 +34,17 @@ export default {
 <style scoped>
 header {
   line-height: 1.5;
-  max-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Ensure the header has a background */
+  z-index: 1000;
+}
+
+.wrapper {
+  padding: 2rem;
+  padding-bottom: 0;
 }
 
 nav {
@@ -44,7 +54,6 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 1rem;
-  margin-bottom: 40px;
 }
 
 nav a.router-link-exact-active {
@@ -61,5 +70,9 @@ nav a {
   padding: 1rem 1rem;
   border-top: 2px solid var(--color-border);
   border-bottom: 2px solid var(--color-border);
+}
+
+.main {
+  padding-top: calc(7rem + 40px); /* Adjust padding to match header height and wrapper padding */
 }
 </style>

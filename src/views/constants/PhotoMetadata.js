@@ -1,3 +1,4 @@
+const home = import.meta.glob('@/assets/photos/home/*.jpg', { eager: true })
 const images1 = import.meta.glob('@/assets/photos/item1/*.jpg', { eager: true })
 const images2 = import.meta.glob('@/assets/photos/item2/*.jpg', { eager: true })
 const images3 = import.meta.glob('@/assets/photos/item3/*.jpg', { eager: true })
@@ -20,6 +21,20 @@ const photoList = (images) => Object.entries(images).map(([path, mod]) => ({
 }));
 
 export const details = {
+  '0': {
+    title: 'Home',
+    description:
+      `My name is Jordan Small and I'm a woodworker from Cincinnati Ohio. I specialize in furniture, cabinets, woodturning, joinery, and millwork. My shop is located in the Lambda building on the northwest side of downtown. I was born here in Cincinnati and have lived here most of my life; I attended Northern Kentucky University and The University of Cincinnati for Comparative Literature; I was a bartender for about ten years post-graduation. Amidst that time, I acquired knowledge and experience in building furniture and manipulating wood into objects that are both pleasing to look at and practical for the everyday human.
+
+      My approach to what I do, and what I "do" is not "art," just to get that out of the way; I make objects with as little waste as possible, using materials that are not damaging to the environment or produce excessive amounts of byproducts. It's important to me to adhere to a process that is the least bit damaging to the world around me. In addition to that, I also adhere to a strict anti-big box store mentality, meaning I don't support corporations because they exploit their workers; money sucks in general and we shouldn't have to fight over resources. In any case, I buy as local/regional as I can as well as supporting other smaller businesses in my community.
+
+      There's a really good chance that what I'm selling or quoting you is going to be more expensive than Michaels, Ikea, or Furniture Fair. If that's why you're here you might want to consider that your money pays for my rent, my dog, my stomach, my books, my continuing education, and my freedom from the constraints of being employed by the invisible hand we all tremble beneath. Maybe you're asking, "why would I liberate this guy when I'm the one who's oppressed?" I'd say you're right and that you should close this window, smash your computer, and go outside and figure out how you want to live your life and do it. I've had over 40-some jobs in my lifetime and they've never worked for me, only I/them.
+
+      I digress, if you've made it this far, thanks for sticking in there with me. I hope you decide you'd like to poke around the website a little bit and even, perhaps, ask me a question. Your attention is much appreciated, in this attention-starved culture we live in, but we can all be happy with where we're at because we're here together.
+
+      I've been doing work for friends, family, strangers, and the occasional employer since 2016. I'd be glad to make you something you'll use every day, something you can pass along to your family or friends, something that lasts.`,
+    photos: photoList(home),
+  },
   '1': {
     title: 'Utility Stool 2/25',
     date: '2/25',

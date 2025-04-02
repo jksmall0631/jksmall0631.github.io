@@ -9,7 +9,15 @@
         </div>
         <div class="info-section">
             <h1>{{ details[id].title }}</h1>
-            <p>{{ details[id].description }}</p>
+            <div>
+                <p 
+                    v-for="paragraph in details[id].description.split('\n')" 
+                    :key="paragraph" 
+                    style="margin-bottom: 1em;"
+                >
+                    {{ paragraph }}
+                </p>
+            </div>
         </div>
     </div>
 </template>
@@ -49,7 +57,6 @@ export default {
 
 .info-section {
     height: 100%;
-    overflow: hidden;
 }
 
 @media (max-width: 850px) {
