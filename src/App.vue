@@ -39,12 +39,15 @@ header {
   left: 0;
   width: 100%;
   background-color: white;
+  z-index: 100;
 }
 
 .headerWrapper {
   display: block;
   padding: 2rem;
   padding-bottom: 0;
+  max-width: 1200px;
+  margin: auto;
 }
 
 nav {
@@ -74,6 +77,7 @@ nav a {
 
 .contentWrapper {
   padding-top: calc(7rem + 40px);
-  width: 100%;
+  max-width: 1000px;
+  margin: auto;
 }
 </style>
