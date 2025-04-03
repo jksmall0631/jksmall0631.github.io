@@ -38,7 +38,7 @@ export const details = {
   '1': {
     title: 'Utility Stool',
     date: '2/25',
-    description: 'Red Oak with Wenge wedges, Spar varnish mix with beeswax topcoat. Varying heights, species, and quantities available for commission.Message for pricing.',
+    description: 'Red Oak with Wenge wedges, Spar varnish mix with beeswax topcoat. Varying heights, species, and quantities available for commission. Message for pricing.',
     photos: photoList(images1),
   },
   '2': {

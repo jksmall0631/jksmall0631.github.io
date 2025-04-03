@@ -43,10 +43,8 @@ export default {
 .detail {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    width: 100%;
-    height: 100vh;
+    grid-template-areas: "photo info";
 }
-
 .photo {
     margin-bottom: 2em;
     margin-right: 2em;
@@ -55,15 +53,23 @@ export default {
     object-fit: cover;
 }
 
+.photo-section {
+    grid-area: photo;
+}
+
 .info-section {
-    height: 100%;
+    grid-area: info;
 }
 
 @media (max-width: 850px) {
     .detail {
-        gap: 2em;
-        grid-template-columns: 1fr; /* Stack sections vertically */
-        grid-template-rows: min-content auto;
+        align-items: center;
+        gap: 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "info"
+            "photo";
     }
     .photo {
         margin: 0;
@@ -73,7 +79,6 @@ export default {
     }
     .photo-section {
         height: 500px;
-        overflow: hidden;
     }
 }
 </style>
