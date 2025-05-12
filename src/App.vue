@@ -1,12 +1,21 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import Title from './components/Title.vue'
+
 </script>
 
 <template>
   <header>
     <div class="headerWrapper">
-      <Title msg="small wood" />
+      <div class="photoContainer">
+        <img
+            class="photo"
+            src="@/assets/photos/header/small-wood-logo-horizontal.png"
+        />
+        <img
+            class="photo"
+            src="@/assets/photos/header/small-wood-mascot.jpeg"
+        />
+      </div>
       <nav>
         <RouterLink to="/">home</RouterLink>
         <RouterLink to="/gallery">gallery</RouterLink>
@@ -14,7 +23,7 @@ import Title from './components/Title.vue'
       </nav>
     </div>
   </header>
-
+  <div class="spacer" />
   <div class="contentWrapper">
     <RouterView />
   </div> 
@@ -33,6 +42,19 @@ export default {
 </script>
 
 <style scoped>
+.photo {
+  height: 140px;
+}
+
+.photoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.photoContainer img:last-child {
+  display: block;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -75,9 +97,32 @@ nav a {
   border-bottom: 2px solid var(--color-border);
 }
 
+.spacer {
+  height: 195px;
+}
+
 .contentWrapper {
-  padding-top: calc(7rem + 40px);
+  padding-top: 40px;
   max-width: 1000px;
   margin: auto;
+}
+
+@media (max-width: 850px) {
+  .contentWrapper {
+    padding-top: 0;
+  }
+  
+  .photo:first-child {
+    width: 100%;
+    height: auto;
+  }
+
+  .photoContainer img:last-child {
+    display: none;
+  }
+
+  .spacer {
+    height: 195px;
+  }
 }
 </style>

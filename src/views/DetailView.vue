@@ -8,7 +8,8 @@
             />
         </div>
         <div class="info-section">
-            <h1>{{ details[id].title }}</h1>
+            <h1 class="title">{{ details[id].title }}</h1>
+            <h3 class="date">{{ details[id].date }}</h3>
             <div>
                 <p 
                     v-for="paragraph in details[id].description.split('\n')" 
@@ -40,6 +41,10 @@ export default {
 </script>
 
 <style scoped>
+.date {
+    color: rgb(195, 191, 191);
+    font-size: 0.85rem;
+}
 .detail {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -61,6 +66,10 @@ export default {
     grid-area: info;
 }
 
+.title {
+    line-height: 2rem;
+}
+
 @media (max-width: 850px) {
     .detail {
         align-items: center;
@@ -72,13 +81,10 @@ export default {
             "photo";
     }
     .photo {
+        align-items: start;
         margin: 0;
         margin-bottom: 2em;
         width: 100%;
-        height: 500px;
-    }
-    .photo-section {
-        height: 500px;
     }
 }
 </style>

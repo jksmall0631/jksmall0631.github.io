@@ -46,6 +46,7 @@ export default {
     width: calc(100% - 2em);
     height: auto;
     object-fit: cover;
+    object-position: top;
 }
 
 .photo-section {
