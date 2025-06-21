@@ -35,13 +35,7 @@ export default {
 </script>
 
 <style scoped>
-.detail {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: "photo info";
-}
 .photo {
-    margin-bottom: 2em;
     margin-right: 2em;
     width: calc(100% - 2em);
     height: auto;
@@ -50,31 +44,33 @@ export default {
 }
 
 .photo-section {
-    grid-area: photo;
+    float: left;
+    width: 50%;
 }
 
 .info-section {
     grid-area: info;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 600px) {
     .detail {
-        align-items: center;
-        gap: 1em;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-            "photo"
-            "info";
+        display: block;
     }
-    .photo {
-        margin: 0;
-        margin-bottom: 2em;
-        width: 100%;
-        height: 500px;
-    }
+
     .photo-section {
-        height: 500px;
+        width: 100%;
+        float: none;
+    }
+
+    .photo {
+        margin-right: 0;
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
+    .info-section {
+        width: 100%;
+        float: none;
     }
 }
 </style>

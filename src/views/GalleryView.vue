@@ -41,10 +41,7 @@
         <img src="../assets/photos/item13/photo1.jpg" :alt="'Item 13'" />
       </div>
       <div class="photo" @click="goToPhotoDetails(14)">
-        <img src="../assets/photos/item14/photo1.jpg" :alt="'Item 14'" />
-      </div>
-      <div class="photo" @click="goToPhotoDetails(15)">
-        <img src="../assets/photos/item15/photo1.jpg" :alt="'Item 15'" />
+        <img src="../assets/photos/header/small-wood-mascot.jpeg" :alt="'Small Wood Mascot'" />
       </div>
     </div>
   </div>
@@ -62,7 +59,6 @@ export default {
 
 <style scoped>
 .gallery {
-  align-items: center;
   display: flex;
   flex-direction: column;
 }
@@ -70,8 +66,8 @@ export default {
 .photo-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 20px;
+  justify-content: center;
 }
 
 .photo {

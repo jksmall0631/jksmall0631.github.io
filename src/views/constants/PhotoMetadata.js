@@ -43,13 +43,13 @@ export const details = {
   '2': {
     title: 'Low Profile Coffee Table',
     date: '6/22',
-    description: 'Cherry with Wenge wedges. Spar varnish mix with beeswax topcoat. Other sizes and species options available.Message for more information.',
+    description: 'Cherry with Wenge wedges. Spar varnish mix with beeswax topcoat. Other sizes and species options available. Message for more information.',
     photos: photoList(images2),
   },
   '3': {
     title: 'Incognito Desk',
     date: '7/22',
-    description: 'White Oak with Wenge accents. Spar varnish mix with beeswax topcoat. Other sizes and species available.Message for further inquiry.',
+    description: 'White Oak with Wenge accents. Spar varnish mix with beeswax topcoat. Other sizes and species available. Inquire within.',
     photos: photoList(images3),
   },
   '4': {
@@ -82,7 +82,7 @@ export const details = {
     photos: photoList(images8),
   },
   '9': {
-    title: 'Curly Café Table',
+    title: 'Curly Café',
     date: '1/24',
     description: 'Cherry. Spar varnish mix with beeswax topcoat. Size, shape, and species options available.',
     photos: photoList(images9),
@@ -90,37 +90,37 @@ export const details = {
   '10': {
     title: 'Worm',
     date: '12/24',
-    description: 'Red Oak with Wenge wedges. Spar varnish mix with a beeswax topcoat. This was a one-off / experiment for donation. I intend on playing with this form upon further exploration.Variants available.',
+    description: 'Red Oak with Wenge wedges. Spar varnish mix with a beeswax topcoat. This was a one-off / experiment for donation. I intend on playing with this form upon further exploration. Variants available.',
     photos: photoList(images10),
   },
   '11': {
-    title: 'Assorted Objects',
-    date: 'varying',
-    description: 'Be specific about inquiries. Thanks for looking.',
-    photos: photoList(images11),
-  },
-  '12': {
     title: 'ICBM Cocktail',
     date: '10/25',
     description: 'Red Oak. Spar varnish mixture with beeswax topcoat. Variants available.',
-    photos: photoList(images12),
+    photos: photoList(images11),
   },
-  '13': {
+  '12': {
     title: 'Turn of the century staircase spindles',
     date: '6/24',
     description: 'Red Oak. Unfinished. The origional wood was English Oak but straight grain Red Oak was as close as I could get here in the Midwest.',
+    photos: photoList(images12),
+  },
+  '13': {
+    title: 'Assorted Cabinets and Tool Chests',
+    date: '1/17',
+    description: 'Mostly paint-grade Sugar Pine.',
     photos: photoList(images13),
   },
   '14': {
-    title: 'Assorted Objects #2',
+    title: 'Assorted Objects',
     date: 'varying',
     description: 'Be specific about inquiries. Thanks for looking.',
     photos: photoList(images14),
   },
-  '15': {
-    title: 'Assorted Cabinets and Tool Chests',
-    date: '1/17',
-    description: 'Mostly paint-grade Sugar Pine.',
-    photos: photoList(images15),
-  },
+  // '15': {
+  //   title: 'Assorted Objects #2',
+  //   date: 'varying',
+  //   description: 'Be specific about inquiries. Thanks for looking.',
+  //   photos: photoList(images15),
+  // },
 };

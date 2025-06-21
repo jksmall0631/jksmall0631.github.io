@@ -4,7 +4,7 @@
       v-if="!success"
       class="contact"
     >
-      <h1 class="header">Contact Me</h1>
+      <h1 class="header">contact me</h1>
       <form
         class="form"
         ref="form"

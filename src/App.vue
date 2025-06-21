@@ -26,7 +26,10 @@ import { RouterLink, RouterView } from 'vue-router'
   <div class="spacer" />
   <div class="contentWrapper">
     <RouterView />
-  </div> 
+  </div>
+  <footer>
+    <div class="footerSpacer" />
+  </footer>
 </template>
 
 <script>
@@ -98,31 +101,31 @@ nav a {
 }
 
 .spacer {
-  height: 195px;
+  height: 240px;;
 }
 
 .contentWrapper {
-  padding-top: 40px;
-  max-width: 1000px;
+  max-width: 940px;
   margin: auto;
 }
 
-@media (max-width: 850px) {
-  .contentWrapper {
-    padding-top: 0;
-  }
-  
-  .photo:first-child {
-    width: 100%;
-    height: auto;
-  }
+.footerSpacer {
+  height: 100px;
+}
 
+@media (max-width: 850px) {
   .photoContainer img:last-child {
     display: none;
   }
+}
+
+@media (max-width: 700px) {
+  .photo {
+    height: 60px;
+  }
 
   .spacer {
-    height: 195px;
+    height: 160px;
   }
 }
 </style>
