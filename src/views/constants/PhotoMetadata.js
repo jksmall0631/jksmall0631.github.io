@@ -21,6 +21,95 @@ const photoList = (images) => Object.entries(images).map(([path, mod]) => ({
 }));
 
 export const details = {
+  '15': {
+    title: 'Goth Murphy Bed With Desk',
+    date: '7/25',
+    description: 'oak, poplar, 1/2 finished maple ply, custom brass hardware, custom poplar knobs. Custom shapes, sizes, features, please contact.',
+    photos: photoList(images15),
+  },
+  '14': {
+    title: 'Utility Stool',
+    date: '2/25',
+    description: 'Red Oak with Wenge wedges, Spar varnish mix with beeswax topcoat. Varying heights, species, and quantities available for commission. Message for pricing.',
+    photos: photoList(images14),
+  },
+  '13': {
+    title: 'Low Profile Coffee Table',
+    date: '6/22',
+    description: 'Cherry with Wenge wedges. Spar varnish mix with beeswax topcoat. Other sizes and species options available. Message for more information.',
+    photos: photoList(images13),
+  },
+  '12': {
+    title: 'Incognito Desk',
+    date: '7/22',
+    description: 'White Oak with Wenge accents. Spar varnish mix with beeswax topcoat. Other sizes and species available. Inquire within.',
+    photos: photoList(images12),
+  },
+  '11': {
+    title: 'Foggy Medicine Cabinet',
+    date: '1/21',
+    description: 'White Oak with Wenge accents. Spar varnish mix and beeswax topcoat. Sizes, species, and other options available for commission.',
+    photos: photoList(images11),
+  },
+  '10': {
+    title: 'Custom Cabinets',
+    description: 'Birch Plywood, Poplar, Cherry. Typically paint grade. Custom designs available to suit every need.',
+    photos: photoList(images10),
+  },
+  '9': {
+    title: 'Reading Chair',
+    date: '9/20',
+    description: 'Hand-hewn White Oak, Wenge wedges, Rush weave. Spar varnish mix with beeswax topcoat. Custom sizes, species, and quantities available.',
+    photos: photoList(images9),
+  },
+  '8': {
+    title: 'His and Hers Bedside Tables',
+    date: '12/24',
+    description: 'White Oak with Wenge accents. Spar varnish mix with beeswax topcoat. Size, species, quantitiy options available.',
+    photos: photoList(images8),
+  },
+  '7': {
+    title: 'Walking Stick Coat Rack',
+    date: '11/24',
+    description: 'Hand-hewn Red Oak. Spar varnish mixture with beeswax topcoat. Multitudes of variations available.',
+    photos: photoList(images7),
+  },
+  '6': {
+    title: 'Curly Café',
+    date: '1/24',
+    description: 'Cherry. Spar varnish mix with beeswax topcoat. Size, shape, and species options available.',
+    photos: photoList(images6),
+  },
+  '5': {
+    title: 'Worm',
+    date: '12/24',
+    description: 'Red Oak with Wenge wedges. Spar varnish mix with a beeswax topcoat. This was a one-off / experiment for donation. I intend on playing with this form upon further exploration. Variants available.',
+    photos: photoList(images5),
+  },
+  '4': {
+    title: 'ICBM Cocktail',
+    date: '10/25',
+    description: 'Red Oak. Spar varnish mixture with beeswax topcoat. Variants available.',
+    photos: photoList(images4),
+  },
+  '3': {
+    title: 'Turn of the century staircase spindles',
+    date: '6/24',
+    description: 'Red Oak. Unfinished. The origional wood was English Oak but straight grain Red Oak was as close as I could get here in the Midwest.',
+    photos: photoList(images3),
+  },
+  '2': {
+    title: 'Assorted Cabinets and Tool Chests',
+    date: '1/17',
+    description: 'Mostly paint-grade Sugar Pine.',
+    photos: photoList(images2),
+  },
+  '1': {
+    title: 'Assorted Objects',
+    date: 'varying',
+    description: 'Be specific about inquiries. Thanks for looking.',
+    photos: photoList(images1),
+  },
   '0': {
     description:
       `My name is Jordan Small and I'm a woodworker from Cincinnati Ohio. I specialize in furniture, cabinets, woodturning, joinery, and millwork. My shop is located in the Lambda building on the northwest side of downtown. I was born here in Cincinnati and have lived here most of my life; I attended Northern Kentucky University and The University of Cincinnati for Comparative Literature; I was a bartender for about ten years post-graduation. Amidst that time, I acquired knowledge and experience in building furniture and manipulating wood into objects that are both pleasing to look at and practical for the everyday human.
@@ -34,93 +123,4 @@ export const details = {
       I've been doing work for friends, family, strangers, and the occasional employer since 2016. I'd be glad to make you something you'll use every day, something you can pass along to your family or friends, something that lasts.`,
     photos: photoList(home),
   },
-  '1': {
-    title: 'Utility Stool',
-    date: '2/25',
-    description: 'Red Oak with Wenge wedges, Spar varnish mix with beeswax topcoat. Varying heights, species, and quantities available for commission. Message for pricing.',
-    photos: photoList(images1),
-  },
-  '2': {
-    title: 'Low Profile Coffee Table',
-    date: '6/22',
-    description: 'Cherry with Wenge wedges. Spar varnish mix with beeswax topcoat. Other sizes and species options available. Message for more information.',
-    photos: photoList(images2),
-  },
-  '3': {
-    title: 'Incognito Desk',
-    date: '7/22',
-    description: 'White Oak with Wenge accents. Spar varnish mix with beeswax topcoat. Other sizes and species available. Inquire within.',
-    photos: photoList(images3),
-  },
-  '4': {
-    title: 'Foggy Medicine Cabinet',
-    date: '1/21',
-    description: 'White Oak with Wenge accents. Spar varnish mix and beeswax topcoat. Sizes, species, and other options available for commission.',
-    photos: photoList(images4),
-  },
-  '5': {
-    title: 'Custom Cabinets',
-    description: 'Birch Plywood, Poplar, Cherry. Typically paint grade. Custom designs available to suit every need.',
-    photos: photoList(images5),
-  },
-  '6': {
-    title: 'Reading Chair',
-    date: '9/20',
-    description: 'Hand-hewn White Oak, Wenge wedges, Rush weave. Spar varnish mix with beeswax topcoat. Custom sizes, species, and quantities available.',
-    photos: photoList(images6),
-  },
-  '7': {
-    title: 'His and Hers Bedside Tables',
-    date: '12/24',
-    description: 'White Oak with Wenge accents. Spar varnish mix with beeswax topcoat. Size, species, quantitiy options available.',
-    photos: photoList(images7),
-  },
-  '8': {
-    title: 'Walking Stick Coat Rack',
-    date: '11/24',
-    description: 'Hand-hewn Red Oak. Spar varnish mixture with beeswax topcoat. Multitudes of variations available.',
-    photos: photoList(images8),
-  },
-  '9': {
-    title: 'Curly Café',
-    date: '1/24',
-    description: 'Cherry. Spar varnish mix with beeswax topcoat. Size, shape, and species options available.',
-    photos: photoList(images9),
-  },
-  '10': {
-    title: 'Worm',
-    date: '12/24',
-    description: 'Red Oak with Wenge wedges. Spar varnish mix with a beeswax topcoat. This was a one-off / experiment for donation. I intend on playing with this form upon further exploration. Variants available.',
-    photos: photoList(images10),
-  },
-  '11': {
-    title: 'ICBM Cocktail',
-    date: '10/25',
-    description: 'Red Oak. Spar varnish mixture with beeswax topcoat. Variants available.',
-    photos: photoList(images11),
-  },
-  '12': {
-    title: 'Turn of the century staircase spindles',
-    date: '6/24',
-    description: 'Red Oak. Unfinished. The origional wood was English Oak but straight grain Red Oak was as close as I could get here in the Midwest.',
-    photos: photoList(images12),
-  },
-  '13': {
-    title: 'Assorted Cabinets and Tool Chests',
-    date: '1/17',
-    description: 'Mostly paint-grade Sugar Pine.',
-    photos: photoList(images13),
-  },
-  '14': {
-    title: 'Assorted Objects',
-    date: 'varying',
-    description: 'Be specific about inquiries. Thanks for looking.',
-    photos: photoList(images14),
-  },
-  // '15': {
-  //   title: 'Assorted Objects #2',
-  //   date: 'varying',
-  //   description: 'Be specific about inquiries. Thanks for looking.',
-  //   photos: photoList(images15),
-  // },
 };

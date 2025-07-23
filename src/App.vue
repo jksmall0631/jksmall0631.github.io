@@ -24,9 +24,11 @@ import { RouterLink, RouterView } from 'vue-router'
     </div>
   </header>
   <div class="spacer" />
-  <div class="contentWrapper">
-    <RouterView />
-  </div>
+  <body>
+    <div class="contentWrapper">
+      <RouterView />
+    </div>
+  </body>
   <footer>
     <div class="footerSpacer" />
   </footer>
