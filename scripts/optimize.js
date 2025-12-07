@@ -46,6 +46,7 @@ async function optimizeImage(filePath) {
   const outputFile = path.join(outputDir, `${baseName}.webp`);
 
   await sharp(filePath)
+    .rotate() // auto-orient based on EXIF
     .resize({ width: 1600, withoutEnlargement: true }) // don't upscale small images
     .webp({ quality: 80 })
     .toFile(outputFile);

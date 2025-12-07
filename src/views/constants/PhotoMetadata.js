@@ -53,50 +53,50 @@ export const details = {
     photos: photoList(images12),
   },
   '11': {
-    title: 'Foggy Medicine Cabinet',
-    date: '1/21',
-    description: 'White Oak with Wenge accents. Spar varnish mix and beeswax topcoat. Sizes, species, and other options available for commission.',
-    photos: photoList(images11),
-  },
-  '10': {
-    title: 'Custom Cabinets',
-    description: 'Birch Plywood, Poplar, Cherry. Typically paint grade. Custom designs available to suit every need.',
-    photos: photoList(images10),
-  },
-  '9': {
-    title: 'Reading Chair',
-    date: '9/20',
-    description: 'Hand-hewn White Oak, Wenge wedges, Rush weave. Spar varnish mix with beeswax topcoat. Custom sizes, species, and quantities available.',
-    photos: photoList(images9),
-  },
-  '8': {
-    title: 'His and Hers Bedside Tables',
-    date: '12/24',
-    description: 'White Oak with Wenge accents. Spar varnish mix with beeswax topcoat. Size, species, quantitiy options available.',
-    photos: photoList(images8),
-  },
-  '7': {
-    title: 'Walking Stick Coat Rack',
-    date: '11/24',
-    description: 'Hand-hewn Red Oak. Spar varnish mixture with beeswax topcoat. Multitudes of variations available.',
-    photos: photoList(images7),
-  },
-  '6': {
     title: 'Curly Café',
     date: '1/24',
     description: 'Cherry. Spar varnish mix with beeswax topcoat. Size, shape, and species options available.',
-    photos: photoList(images6),
+    photos: photoList(images11),
   },
-  '5': {
-    title: 'Worm',
-    date: '12/24',
-    description: 'Red Oak with Wenge wedges. Spar varnish mix with a beeswax topcoat. This was a one-off / experiment for donation. I intend on playing with this form upon further exploration. Variants available.',
-    photos: photoList(images5),
-  },
-  '4': {
+  '10': {
     title: 'ICBM Cocktail',
     date: '10/25',
     description: 'Red Oak. Spar varnish mixture with beeswax topcoat. Variants available.',
+    photos: photoList(images10),
+  },
+  '9': {
+    title: 'His and Hers Bedside Tables',
+    date: '12/24',
+    description: 'White Oak with Wenge accents. Spar varnish mix with beeswax topcoat. Size, species, quantitiy options available.',
+    photos: photoList(images9),
+  },
+  '8': {
+    title: 'Reading Chair',
+    date: '9/20',
+    description: 'Hand-hewn White Oak, Wenge wedges, Rush weave. Spar varnish mix with beeswax topcoat. Custom sizes, species, and quantities available.',
+    photos: photoList(images8),
+  },
+  '7': {
+    title: 'Foggy Medicine Cabinet',
+    date: '1/21',
+    description: 'White Oak with Wenge accents. Spar varnish mix and beeswax topcoat. Sizes, species, and other options available for commission.',
+    photos: photoList(images7),
+  },
+  '6': {
+    title: 'Custom Cabinets',
+    description: 'Birch Plywood, Poplar, Cherry. Typically paint grade. Custom designs available to suit every need.',
+    photos: photoList(images6),
+  },
+  '5': {
+    title: 'Walking Stick Coat Rack',
+    date: '11/24',
+    description: 'Hand-hewn Red Oak. Spar varnish mixture with beeswax topcoat. Multitudes of variations available.',
+    photos: photoList(images5),
+  },
+  '4': {
+    title: 'Worm',
+    date: '12/24',
+    description: 'Red Oak with Wenge wedges. Spar varnish mix with a beeswax topcoat. This was a one-off / experiment for donation. I intend on playing with this form upon further exploration. Variants available.',
     photos: photoList(images4),
   },
   '3': {
