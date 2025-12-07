@@ -36,6 +36,9 @@ export default {
             type: Number,
             required: true
         }
+    },
+    mounted() {
+        window.scrollTo(0, 0);
     }
 }
 </script>
