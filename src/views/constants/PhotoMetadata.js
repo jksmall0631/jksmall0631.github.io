@@ -1,20 +1,20 @@
-const home = import.meta.glob('@/assets/photos/home/*.jpg', { eager: true })
-const images1 = import.meta.glob('@/assets/photos/item1/*.jpg', { eager: true })
-const images2 = import.meta.glob('@/assets/photos/item2/*.jpg', { eager: true })
-const images3 = import.meta.glob('@/assets/photos/item3/*.jpg', { eager: true })
-const images4 = import.meta.glob('@/assets/photos/item4/*.jpg', { eager: true })
-const images5 = import.meta.glob('@/assets/photos/item5/*.jpg', { eager: true })
-const images6 = import.meta.glob('@/assets/photos/item6/*.jpg', { eager: true })
-const images7 = import.meta.glob('@/assets/photos/item7/*.jpg', { eager: true });
-const images8 = import.meta.glob('@/assets/photos/item8/*.jpg', { eager: true });
-const images9 = import.meta.glob('@/assets/photos/item9/*.jpg', { eager: true });
-const images10 = import.meta.glob('@/assets/photos/item10/*.jpg', { eager: true });
-const images11 = import.meta.glob('@/assets/photos/item11/*.jpg', { eager: true });
-const images12 = import.meta.glob('@/assets/photos/item12/*.jpg', { eager: true });
-const images13 = import.meta.glob('@/assets/photos/item13/*.jpg', { eager: true });
-const images14 = import.meta.glob('@/assets/photos/item14/*.jpg', { eager: true });
-const images15 = import.meta.glob('@/assets/photos/item15/*.jpg', { eager: true });
-const images16 = import.meta.glob('@/assets/photos/item16/*.jpg', { eager: true });
+const home = import.meta.glob('@/assets/photos-optimized/home/*.webp', { eager: true })
+const images1 = import.meta.glob('@/assets/photos-optimized/item1/*.webp', { eager: true })
+const images2 = import.meta.glob('@/assets/photos-optimized/item2/*.webp', { eager: true })
+const images3 = import.meta.glob('@/assets/photos-optimized/item3/*.webp', { eager: true })
+const images4 = import.meta.glob('@/assets/photos-optimized/item4/*.webp', { eager: true })
+const images5 = import.meta.glob('@/assets/photos-optimized/item5/*.webp', { eager: true })
+const images6 = import.meta.glob('@/assets/photos-optimized/item6/*.webp', { eager: true })
+const images7 = import.meta.glob('@/assets/photos-optimized/item7/*.webp', { eager: true });
+const images8 = import.meta.glob('@/assets/photos-optimized/item8/*.webp', { eager: true });
+const images9 = import.meta.glob('@/assets/photos-optimized/item9/*.webp', { eager: true });
+const images10 = import.meta.glob('@/assets/photos-optimized/item10/*.webp', { eager: true });
+const images11 = import.meta.glob('@/assets/photos-optimized/item11/*.webp', { eager: true });
+const images12 = import.meta.glob('@/assets/photos-optimized/item12/*.webp', { eager: true });
+const images13 = import.meta.glob('@/assets/photos-optimized/item13/*.webp', { eager: true });
+const images14 = import.meta.glob('@/assets/photos-optimized/item14/*.webp', { eager: true });
+const images15 = import.meta.glob('@/assets/photos-optimized/item15/*.webp', { eager: true });
+const images16 = import.meta.glob('@/assets/photos-optimized/item16/*.webp', { eager: true });
 
 const photoList = (images) => Object.entries(images).map(([path, mod]) => ({
   src: mod.default,

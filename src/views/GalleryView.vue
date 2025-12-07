@@ -3,98 +3,114 @@
     <div class="photo-grid">
       <div class="photo" @click="goToPhotoDetails(16)">
         <img
-          src="../assets/photos/item16/photo1.jpg"
+          src="../assets/photos-optimized/item16/photo1.webp"
           alt="Item 16"
+          loading="lazy"
         />
       </div>
       <div class="photo" @click="goToPhotoDetails(15)">
         <img
-          src="../assets/photos/item15/photo1.jpg"
+          src="../assets/photos-optimized/item15/photo1.webp"
           alt="Item 15"
+          loading="lazy"
         />
       </div>
       <div class="photo" @click="goToPhotoDetails(14)">
         <img
-          src="../assets/photos/item14/photo1.jpg"
-          alt="Item 1"
+          src="../assets/photos-optimized/item14/photo1.webp"
+          alt="Item 14"
+          loading="lazy"
         />
       </div>
       <div class="photo" @click="goToPhotoDetails(13)">
         <img
-          src="../assets/photos/item13/photo1.jpg"
-          alt="Item 2"
+          src="../assets/photos-optimized/item13/photo1.webp"
+          alt="Item 13"
+          loading="lazy"
         />
       </div>
       <div class="photo" @click="goToPhotoDetails(12)">
         <img
-          src="../assets/photos/item12/photo1.jpg"
-          alt="Item 3"
+          src="../assets/photos-optimized/item12/photo1.webp"
+          alt="Item 12"
+          loading="lazy"
         />
       </div>
       <div class="photo" @click="goToPhotoDetails(11)">
         <img
-          src="../assets/photos/item11/photo1.jpg"
-          alt="Item 4"
+          src="../assets/photos-optimized/item11/photo1.webp"
+          alt="Item 11"
+          loading="lazy"
         />
       </div>
       <div class="photo" @click="goToPhotoDetails(10)">
         <img
-          src="../assets/photos/item10/photo1.jpg"
-          alt="Item 5"
+          src="../assets/photos-optimized/item10/photo1.webp"
+          alt="Item 10"
+          loading="lazy"
         />
       </div>
       <div class="photo" @click="goToPhotoDetails(9)">
         <img
-          src="../assets/photos/item9/photo1.jpg"
-          alt="Item 6"
+          src="../assets/photos-optimized/item9/photo1.webp"
+          alt="Item 9"
+          loading="lazy"
         />
       </div>
       <div class="photo" @click="goToPhotoDetails(8)">
         <img
-          src="../assets/photos/item8/photo1.jpg"
-          alt="Item 7"
+          src="../assets/photos-optimized/item8/photo1.webp"
+          alt="Item 8"
+          loading="lazy"
         />
       </div>
       <div class="photo" @click="goToPhotoDetails(7)">
         <img
-          src="../assets/photos/item7/photo1.jpg"
-          alt="Item 8"
+          src="../assets/photos-optimized/item7/photo1.webp"
+          alt="Item 7"
+          loading="lazy"
         />
       </div>
       <div class="photo" @click="goToPhotoDetails(6)">
         <img
-          src="../assets/photos/item6/photo1.jpg"
-          alt="Item 9"
+          src="../assets/photos-optimized/item6/photo1.webp"
+          alt="Item 6"
+          loading="lazy"
         />
       </div>
       <div class="photo" @click="goToPhotoDetails(5)">
         <img
-          src="../assets/photos/item5/photo1.jpg"
-          alt="Item 10"
+          src="../assets/photos-optimized/item5/photo1.webp"
+          alt="Item 5"
+          loading="lazy"
         />
       </div>
       <div class="photo" @click="goToPhotoDetails(4)">
         <img
-          src="../assets/photos/item4/photo1.jpg"
-          alt="Item 11"
+          src="../assets/photos-optimized/item4/photo1.webp"
+          alt="Item 4"
+          loading="lazy"
         />
       </div>
       <div class="photo" @click="goToPhotoDetails(3)">
         <img
-          src="../assets/photos/item3/photo1.jpg"
-          alt="Item 12"
+          src="../assets/photos-optimized/item3/photo1.webp"
+          alt="Item 3"
+          loading="lazy"
         />
       </div>
       <div class="photo" @click="goToPhotoDetails(2)">
         <img
-          src="../assets/photos/item2/photo1.jpg"
-          alt="Item 13"
+          src="../assets/photos-optimized/item2/photo1.webp"
+          alt="Item 2"
+          loading="lazy"
         />
       </div>
       <div class="photo" @click="goToPhotoDetails(1)">
         <img
-          src="../assets/photos/header/small-wood-mascot.jpeg"
-          alt="Small Wood Mascot"
+          src="../assets/photos-optimized/header/small-wood-mascot.webp"
+          alt="Small Wood Mascot (Item 1)"
+          loading="lazy"
         />
       </div>
     </div>

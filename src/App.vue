@@ -9,11 +9,11 @@ import { RouterLink, RouterView } from 'vue-router'
       <div class="photoContainer">
         <img
             class="photo"
-            src="@/assets/photos/header/small-wood-logo-horizontal.png"
+            src="@/assets/photos-optimized/header/small-wood-logo-horizontal.webp"
         />
         <img
             class="photo"
-            src="@/assets/photos/header/small-wood-mascot.jpeg"
+            src="@/assets/photos-optimized/header/small-wood-mascot.webp"
         />
       </div>
       <nav>
