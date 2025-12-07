@@ -14,6 +14,7 @@ const images12 = import.meta.glob('@/assets/photos/item12/*.jpg', { eager: true 
 const images13 = import.meta.glob('@/assets/photos/item13/*.jpg', { eager: true });
 const images14 = import.meta.glob('@/assets/photos/item14/*.jpg', { eager: true });
 const images15 = import.meta.glob('@/assets/photos/item15/*.jpg', { eager: true });
+const images16 = import.meta.glob('@/assets/photos/item16/*.jpg', { eager: true });
 
 const photoList = (images) => Object.entries(images).map(([path, mod]) => ({
   src: mod.default,
@@ -21,10 +22,16 @@ const photoList = (images) => Object.entries(images).map(([path, mod]) => ({
 }));
 
 export const details = {
+  '16': {
+    title: 'Knock-down Creeper Coffee Table',
+    date: '11/25',
+    description: 'Cherry Table with Bloodwood wedges. Custom sizes, species, and other options available.',
+    photos: photoList(images16),
+  },
   '15': {
     title: 'Goth Murphy Bed With Desk',
     date: '7/25',
-    description: 'oak, poplar, 1/2 finished maple ply, custom brass hardware, custom poplar knobs. Custom shapes, sizes, features, please contact.',
+    description: 'Oak, poplar, 1/2 finished maple ply, custom brass hardware, custom poplar knobs. Custom shapes, sizes, features, please contact.',
     photos: photoList(images15),
   },
   '14': {

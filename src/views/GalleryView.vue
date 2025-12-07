@@ -1,6 +1,12 @@
 <template>
   <div class="gallery">
     <div class="photo-grid">
+      <div class="photo" @click="goToPhotoDetails(16)">
+        <img
+          src="../assets/photos/item16/photo1.jpg"
+          alt="Item 16"
+        />
+      </div>
       <div class="photo" @click="goToPhotoDetails(15)">
         <img
           src="../assets/photos/item15/photo1.jpg"
