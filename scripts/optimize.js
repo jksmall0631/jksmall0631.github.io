@@ -9,7 +9,11 @@ const __dirname = path.dirname(__filename);
 const inputRoot = path.join(__dirname, "..", "src", "assets", "photos");
 const outputRoot = path.join(__dirname, "..", "src", "assets", "photos-optimized");
 
-// Make sure output root exists
+// Remove outputRoot and all its contents if it exists
+if (fs.existsSync(outputRoot)) {
+  fs.rmSync(outputRoot, { recursive: true, force: true });
+}
+// Recreate output root
 fs.mkdirSync(outputRoot, { recursive: true });
 
 /**
