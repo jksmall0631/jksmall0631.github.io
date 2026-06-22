@@ -15,6 +15,7 @@ const images13 = import.meta.glob('@/assets/photos-optimized/item13/*.webp', { e
 const images14 = import.meta.glob('@/assets/photos-optimized/item14/*.webp', { eager: true });
 const images15 = import.meta.glob('@/assets/photos-optimized/item15/*.webp', { eager: true });
 const images16 = import.meta.glob('@/assets/photos-optimized/item16/*.webp', { eager: true });
+const images17 = import.meta.glob('@/assets/photos-optimized/item17/*.webp', { eager: true });
 
 const photoList = (images) => Object.entries(images).map(([path, mod]) => ({
   src: mod.default,
@@ -22,6 +23,12 @@ const photoList = (images) => Object.entries(images).map(([path, mod]) => ({
 }));
 
 export const details = {
+  '17': {
+    title: 'Royal Twins Nightstand(s)',
+    date: '4/26',
+    description: '3" thick air-dried Red Oak with Hickory accents, drawbored, flush dovetail battons for large panels. Spar Linseed Min mix, Beeswax topcoat.',
+    photos: photoList(images17),
+  },
   '16': {
     title: 'Knock-down Creeper Coffee Table',
     date: '11/25',

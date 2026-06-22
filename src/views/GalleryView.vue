@@ -1,6 +1,13 @@
 <template>
   <div class="gallery">
     <div class="photo-grid">
+      <div class="photo" @click="goToPhotoDetails(17)">
+        <img
+          src="../assets/photos-optimized/item17/photo1.webp"
+          alt="Item 17"
+          loading="lazy"
+        />
+      </div>
       <div class="photo" @click="goToPhotoDetails(16)">
         <img
           src="../assets/photos-optimized/item16/photo1.webp"
