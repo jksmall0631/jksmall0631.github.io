@@ -1,6 +1,20 @@
 <template>
   <div class="gallery">
     <div class="photo-grid">
+      <div class="photo" @click="goToPhotoDetails(19)">
+        <img
+          src="../assets/photos-optimized/item19/photo1.webp"
+          alt="Item 19"
+          loading="lazy"
+        />
+      </div>
+      <div class="photo" @click="goToPhotoDetails(18)">
+        <img
+          src="../assets/photos-optimized/item18/photo1.webp"
+          alt="Item 18"
+          loading="lazy"
+        />
+      </div>
       <div class="photo" @click="goToPhotoDetails(17)">
         <img
           src="../assets/photos-optimized/item17/photo1.webp"

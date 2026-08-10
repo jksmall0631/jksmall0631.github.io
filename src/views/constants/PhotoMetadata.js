@@ -16,6 +16,8 @@ const images14 = import.meta.glob('@/assets/photos-optimized/item14/*.webp', { e
 const images15 = import.meta.glob('@/assets/photos-optimized/item15/*.webp', { eager: true });
 const images16 = import.meta.glob('@/assets/photos-optimized/item16/*.webp', { eager: true });
 const images17 = import.meta.glob('@/assets/photos-optimized/item17/*.webp', { eager: true });
+const images18 = import.meta.glob('@/assets/photos-optimized/item18/*.webp', { eager: true });
+const images19 = import.meta.glob('@/assets/photos-optimized/item19/*.webp', { eager: true });
 
 const photoList = (images) => Object.entries(images).map(([path, mod]) => ({
   src: mod.default,
@@ -23,6 +25,18 @@ const photoList = (images) => Object.entries(images).map(([path, mod]) => ({
 }));
 
 export const details = {
+  '19': {
+    title: 'Workbench',
+    date: '7/26',
+    description: 'Southern Yellow Pine, Red Oak pins, Lake Erie XL vise, big and chunky with drawbored mortice and tennon joinery.',
+    photos: photoList(images19),
+  },
+  '18': {
+    title: 'Sushi Bar and Counter',
+    date: '6/26',
+    description: 'Hard Maple with Hickory pins.Drawbored mortice and tenon joinery, dovetailed battens to allow movement of wide panels, Brass hardware where necessary.Spar varnish mix and beeswax topcoat.',
+    photos: photoList(images18),
+  },
   '17': {
     title: 'Royal Twins Nightstand(s)',
     date: '4/26',
